@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Cryptography</title>
+
+  <!-- CSS  -->
+  <link href="css/Material-Icons.css" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">Cryptography</a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h4 class="header center orange-text">数据加解密定制工具</h4>
+      <br><br>
+
+      <hr>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="inputStr" class="materialize-textarea"></textarea>
+              <label for="inputStr">待解密／加密字符串</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="row center">
+        <a id="btn-AESDecode" class="btn waves-effect waves-light orange"><i class="material-icons left">lock_open</i>AES解密</a>
+        <a id="btn-AESEncode" class="waves-effect waves-light btn orange"><i class="material-icons left">lock</i>AES加密</a>
+      </div>
+      <div class="row center">
+        <a id="btn-getMD5" class="waves-effect waves-light btn orange">获取MD5</a>
+        <a id="btn-URIDecode" class="waves-effect waves-light btn orange">URI Decode</a>
+      </div>
+
+      <br><br>
+      <hr>
+
+      <div class="row">
+        <form class="col s12">
+          <div class="row">
+            <div class="input-field col s12">
+              <textarea id="outputStr" class="materialize-textarea"></textarea>
+              <label for="outputStr">结果在这里</label>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+
+  <footer class="page-footer orange nopadding">
+    <div class="footer-copyright">
+      <div class="container">
+      Made by <a class="orange-text text-lighten-3" href="http://materializecss.com">Yunji</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/materialize.js"></script>
+  
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/core-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/md5-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/enc-base64-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/evpkdf-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/cipher-core-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/mode-ecb-min.js"></script>
+  <script src="https://cdn.staticfile.org/crypto-js/3.1.2/components/aes.js"></script>
+
+  <script src="js/init.js"></script>
+
+  </body>
+</html>
